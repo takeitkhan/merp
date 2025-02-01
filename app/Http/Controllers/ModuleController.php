@@ -10,6 +10,17 @@ class ModuleController extends Controller
 
     public function index()
     {
+
+        // $modules = Module::all();
+        // $modulesWithIcons = collect($modules)->map(function ($module) {
+        //     $config = json_decode(file_get_contents($module->getPath() . '/module.json'), true);
+        //     return [
+        //         'name' => $module->getName(),
+        //         'enabled' => $config['enabled'] ?? false,
+        //         'icon' => $config['icon'] ?? 'fas fa-cube',
+        //         'routes' => $config['routes'] ?? []
+        //     ];
+        // });
         $modules = Module::all();
         $modulesWithStatus = [];
 
@@ -78,7 +89,7 @@ class ModuleController extends Controller
 
     // Disable a module
     public function disableModule($moduleName)
-    {        
+    {
         if (Module::has($moduleName)) {
             Module::disable($moduleName);
             return redirect()->back()->with('success', "Module '$moduleName' has been disabled.");

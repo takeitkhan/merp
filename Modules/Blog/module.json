@@ -1,12 +1,23 @@
 {
     "name": "Blog",
     "alias": "blog",
-    "description": "",
+    "description": "Enterprise website builder",
     "keywords": [],
     "priority": 0,
     "providers": [
         "Modules\\Blog\\Providers\\BlogServiceProvider"
     ],
     "files": [],
-    "enabled": "Enabled"
+    "enabled": true,
+    "icon": "fas fa-newspaper",
+    "routes": [
+        {
+            "name": "blog.index",
+            "icon": "fas fa-list"
+        },
+        {
+            "name": "blog.create",
+            "icon": "fas fa-plus"
+        }
+    ]
 }
