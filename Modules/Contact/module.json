@@ -1,11 +1,12 @@
 {
     "name": "Contact",
     "alias": "contact",
-    "description": "",
+    "description": "Centralize your address book",
     "keywords": [],
     "priority": 0,
     "providers": [
         "Modules\\Contact\\Providers\\ContactServiceProvider"
     ],
-    "files": []
+    "files": [],
+    "enabled": "Enabled"
 }

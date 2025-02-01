@@ -7,5 +7,6 @@
     "providers": [
         "Modules\\Blog\\Providers\\BlogServiceProvider"
     ],
-    "files": []
+    "files": [],
+    "enabled": "Enabled"
 }
