@@ -1,5 +1,9 @@
 {
     "Blog": true,
     "User": true,
-    "Contact": true
+    "Contact": false,
+    "CMS": true,
+    "CRM": true,
+    "Sales": true,
+    "Invoicing": true
 }
